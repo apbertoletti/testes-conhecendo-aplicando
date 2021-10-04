@@ -4,7 +4,7 @@
     {
         public decimal EfetuarCalculo(decimal valor1, decimal valor2, char tipoOperacao)
         {
-            decimal resultado = 0;
+            decimal resultado = 0;            
 
             switch (tipoOperacao)
             {
@@ -21,6 +21,9 @@
                     break;
 
                 case '/':
+                    if (valor2 == 0)
+                        return 0;
+
                     resultado = valor1 / valor2;
                     break;
             }

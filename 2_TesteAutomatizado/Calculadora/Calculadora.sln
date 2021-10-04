@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc.WinUI", "Calc.WinUI\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc.Lib", "Calc.Lib\Calc.Lib.csproj", "{8217800B-FE0C-494B-AA21-48C66144A3F3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Tests", "3-Tests", "{7B80B8F8-BB2E-4299-B95C-2F19D988ADCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc.UnitTest", "Calc.UnitTest\Calc.UnitTest.csproj", "{30019A87-1067-4A96-8A28-C65FCDAF2A03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{8217800B-FE0C-494B-AA21-48C66144A3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8217800B-FE0C-494B-AA21-48C66144A3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8217800B-FE0C-494B-AA21-48C66144A3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30019A87-1067-4A96-8A28-C65FCDAF2A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30019A87-1067-4A96-8A28-C65FCDAF2A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30019A87-1067-4A96-8A28-C65FCDAF2A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30019A87-1067-4A96-8A28-C65FCDAF2A03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B37C35CF-8833-4E65-810B-509E76600858} = {B380A8CA-E31A-4DA7-92F8-7152D674F8C5}
 		{8217800B-FE0C-494B-AA21-48C66144A3F3} = {1C3C93E6-6D06-43F0-8637-E0368D17B644}
+		{30019A87-1067-4A96-8A28-C65FCDAF2A03} = {7B80B8F8-BB2E-4299-B95C-2F19D988ADCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2852AB5-FC2F-423D-AAC8-AB7ED9078ED5}
