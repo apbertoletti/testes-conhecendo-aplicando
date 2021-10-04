@@ -1,0 +1,47 @@
+using Calc.Lib;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+
+namespace Calculadora
+{
+    [TestClass]
+    public class Calculos_Test
+    {
+        [DataTestMethod]
+        [DataRow("C01", "10", "2", '+', "12")]
+        [DataRow("C02", "-3", "-5", '+', "-8")]
+        [DataRow("C03", "10", "-3", '+', "7")]
+        [DataRow("C04", "-5", "18", '+', "13")]
+        [DataRow("C05", "0", "9", '+', "9")]
+        [DataRow("C06", "9", "0", '+', "9")]
+        [DataRow("C07", "10", "2", '-', "8")]
+        [DataRow("C08", "-3", "-5", '-', "2")]
+        [DataRow("C09", "10", "-3", '-', "13")]
+        [DataRow("C10", "-5", "18", '-', "-23")]
+        [DataRow("C11", "0", "9", '-', "-9")]
+        [DataRow("C12", "9", "0", '-', "9")]
+        [DataRow("C13", "10", "2", '*', "20")]
+        [DataRow("C14", "-3", "-5", '*', "15")]
+        [DataRow("C15", "10", "-3", '*', "-30")]
+        [DataRow("C16", "-5", "18", '*', "-90")]
+        [DataRow("C17", "0", "9", '*', "0")]
+        [DataRow("C18", "9", "0", '*', "0")]
+        [DataRow("C19", "10", "2", '/', "5")]
+        [DataRow("C20", "-3", "-5", '/', "0,6")]
+        [DataRow("C21", "10", "-5", '/', "-2")]
+        [DataRow("C22", "-5", "20", '/', "-0,25")]
+        [DataRow("C23", "0", "9", '/', "0")]
+        [DataRow("C24", "9", "0", '/', "0")]
+        public void RealizarCalculo_Test(string cenario, string valor1, string valor2, char operacao, string resultadoEsperado)
+        {
+            //Preparar
+            Calculos obj = new Calculos();
+
+            //Executar (exercitar)
+            decimal resultado = obj.EfetuarCalculo(Convert.ToDecimal(valor1), Convert.ToDecimal(valor2), operacao);
+
+            //Verificar
+            Assert.AreEqual(Convert.ToDecimal(resultadoEsperado), resultado);
+        }
+    }
+}

@@ -305,7 +305,7 @@ namespace Calculadora
         }
 
         [TestMethod]
-        public void Quando_Dividir_PrimeiroValor_9_SegundoValor_0_ResultadoEsperado_9()
+        public void Quando_Dividir_PrimeiroValor_9_SegundoValor_0_ResultadoEsperado_0()
         {
             //Preparar
             Calculos obj = new Calculos();
